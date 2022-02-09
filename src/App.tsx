@@ -1,12 +1,10 @@
-const App = () => (
-  <div>
-    <header>
-      <nav>
-        <img src="/images/logo-wearism.png" alt="logo shop" />
-      </nav>
-      <div></div>
-    </header>
-  </div>
-);
+import React from 'react'
+import TheMainNav from './component/core/TheMainNav'
 
-export default App;
+const App: React.FC = () => (
+  <div className="container mx-auto my-10">
+    <TheMainNav />
+  </div>
+)
+
+export default App
