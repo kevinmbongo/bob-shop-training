@@ -2,7 +2,7 @@ const App = () => (
   <div>
     <header>
       <nav>
-        <img src="/images/logo-wearism.png" alt="logo" />
+        <img src="/images/logo-wearism.png" alt="logo shop" />
       </nav>
       <div></div>
     </header>
