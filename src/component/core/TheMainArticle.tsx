@@ -7,7 +7,7 @@ const TheMainArticle: React.FC = () => {
     <article className="col-span-9 my-5">
       {' '}
       <header>
-        <h2 className="font-extrabold text-4xl mb-1">COATS</h2>
+        <h2 className="font-extrabold text-4xl mb-2">COATS</h2>
         <p className="font-bold text-sm mb-7">View more</p>
       </header>
       <section>
