@@ -1,11 +1,19 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
+    container: {
+      padding: {
+        DEFAULT: '2rem',
+        sm: '2rem',
+        lg: '3rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+    },
     extend: {
       colors: {
-        primary: '#0F0075',
-        secondary: '#FF006E',
-        gray: '#F8F8F8',
+        grey: '#F8F8F8',
+        pink: '#F9B9DC',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

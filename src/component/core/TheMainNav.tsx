@@ -8,11 +8,11 @@ const TheMainNav: React.FC = () => {
     <>
       <nav className="my-5 flex justify-between items-center col-span-12">
         <img src="/images/logo-wearism.png" alt="logo shop" />
-        <div className="flex rounded-lg w-6/12 text-xs bg-gray py-2.5 px-3">
+        <div className="flex rounded-lg w-6/12 text-xs bg-grey py-2.5 px-3">
           <input
             type="text"
             placeholder="Search for items, brands and inspiration"
-            className="w-full bg-gray focus:outline-none "
+            className="w-full bg-grey focus:outline-none"
           />
           <Icon path={mdiSearchWeb} size={1} color="grey" />
         </div>
@@ -28,7 +28,7 @@ const TheMainNav: React.FC = () => {
         </div>
       </nav>
 
-      <header className=" bg-pink-300 rounded-2xl text-center font-bold py-14 my-10 col-span-12">
+      <header className=" bg-pink rounded-3xl text-center font-bold py-14 my-10 col-span-12">
         <h1 className="text-2xl">
           $20 OFF $100 PLUS, <br />
           GET FREE NEXT-DAY DELIVRERY
