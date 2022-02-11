@@ -7,7 +7,7 @@ type NavTileProps = {
 
 const NavTile: React.FC<NavTileProps> = ({ title, icon }) => (
   <div className="bg-gray my-4 rounded-lg flex items-center justify-between py-5 px-8">
-    <h3>{title}</h3>
+    <h3 className="font-bold">{title}</h3>
     {icon}
   </div>
 )
