@@ -1,23 +1,21 @@
-import { mdiAbacus, mdiHome, mdiLightningBolt } from '@mdi/js'
-import Icon from '@mdi/react'
+import { mdiHome } from '@mdi/js'
 import React from 'react'
+import { THE_LEFT_NAV_TILES } from '../../constants'
 import NavTile from '../commons/NavTile'
-
-const ICON_STYLE = { size: 0.7, color: 'black' }
 
 const TheLeftNav: React.FC = () => {
   const TILES = [
-    { title: 'HOME', icon: <Icon path={mdiHome} {...ICON_STYLE} /> },
-    { title: 'NEW IN', icon: <Icon path={mdiLightningBolt} {...ICON_STYLE} /> },
-    { title: 'COATS', icon: <Icon path={mdiAbacus} {...ICON_STYLE} /> },
-    { title: 'TOPS', icon: <Icon path={mdiHome} {...ICON_STYLE} /> },
-    { title: 'KNITWEAR', icon: <Icon path={mdiHome} {...ICON_STYLE} /> },
+    { title: THE_LEFT_NAV_TILES.HOME, path: mdiHome },
+    { title: THE_LEFT_NAV_TILES.NEW_IN, path: mdiHome },
+    { title: THE_LEFT_NAV_TILES.COATS, path: mdiHome },
+    { title: THE_LEFT_NAV_TILES.TOPS, path: mdiHome },
+    { title: THE_LEFT_NAV_TILES.KNITWEAR, path: mdiHome },
   ]
 
   return (
     <nav className=" col-span-3">
-      {TILES.map(({ title, icon }) => (
-        <NavTile title={title} icon={icon} />
+      {TILES.map(({ title, path }) => (
+        <NavTile title={title} path={path} key={title} />
       ))}
     </nav>
   )
