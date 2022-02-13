@@ -25,7 +25,7 @@ const NavTile: React.FC<NavTileProps> = ({ title, path }) => {
       onClick={handleCategoryChange}
       className={classNames(
         'w-full bg-grey my-4 rounded-lg flex items-center justify-between py-5 px-8 transition-all duration-300 linear',
-        title === currentFilter && 'bg-purples text-white'
+        title === currentFilter && 'bg-purple text-white'
       )}
     >
       <span className="font-bold">{title}</span>

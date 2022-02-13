@@ -14,7 +14,7 @@ module.exports = {
       colors: {
         grey: '#F8F8F8',
         pink: '#F9B9DC',
-        purples: '#9175DC',
+        purple: '#9175DC',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
