@@ -6,21 +6,25 @@ type CardProps = {
   image: string
 }
 
-const Card: React.FC<CardProps> = ({ image }) => (
-  <article className=" rounded-lg relative h-64 ">
-    <img
-      className="w-full h-full rounded-3xl object-cover"
-      src={image}
-      alt={image}
-    />
-    <button className="absolute bottom-5 right-3 flex">
-      <Icon path={mdiHeartCircleOutline} size={1} color="pink" />
-    </button>
+const Card: React.FC<CardProps> = ({ image }) => {
+  const IconClass = true
 
-    <button className="absolute bottom-5 right-10 flex">
-      <Icon path={mdiPlus} size={1} color="purple" />
-    </button>
-  </article>
-)
+  return (
+    <article className=" rounded-lg relative h-64 ">
+      <img
+        className="w-full h-full rounded-3xl object-cover"
+        src={image}
+        alt={image}
+      />
+      <button className="absolute bottom-5 right-3 flex">
+        <Icon path={mdiHeartCircleOutline} size={1} color="white" />
+      </button>
+
+      <button className="absolute bottom-5 right-10 flex">
+        <Icon path={mdiPlus} size={1} color="white" />
+      </button>
+    </article>
+  )
+}
 
 export default Card
